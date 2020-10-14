@@ -1,0 +1,25 @@
+{% extends "layouts/table.html" %}
+
+{% block content %}
+  <article>
+    {% include "partials/page-header.html" %}
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Horse</th>
+          <th scope="col">Sire</th>
+          <th scope="col">Broodmare Sire</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in pedigree %}
+        <tr>
+          <td><a href="{{ item.pedigreeLink }}">{{ item.horse }}</a></td>
+          <td>{{ item.sire }}</td>
+          <td>{{ item.broodmareSire }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </article>
+{% endblock %}

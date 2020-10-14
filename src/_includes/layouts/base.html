@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {%- include "partials/meta-info.html" -%}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+      <div class="wrapper-header">
+        <div>
+          <div class="site-title">Omnisurface Stars</div>
+          <p class="site-subtitle">Thoroughbred Horse Racing's Triple Surface Top Performers</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/" {% if page.url === '/' %}aria-current="true"{% endif %}>Home</a></li>
+            <li><a href="/won-all-three/" {% if '/won-all-three/' in page.url %}aria-current="true"{% endif %}>Won on All Three</a></li>
+            <li><a href="/won-two/" {% if '/won-two/' in page.url %}aria-current="true"{% endif %}>Won on Two</a></li>
+            <li><a href="/pedigree/" {% if '/pedigree/' in page.url %}aria-current="true"{% endif %}>Pedigree</a></li>
+            <li><a href="/about/" {% if '/about/' in page.url %}aria-current="true"{% endif %}>About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div class="wrapper">
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+    <footer>
+      <p class="wrapper"><a href="https://www.11ty.dev/">Eleventy</a> + <a href="https://www.netlify.com/">Netlify</a></p>
+    </footer>
+  </body>
+</html>

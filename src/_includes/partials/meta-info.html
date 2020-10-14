@@ -1,0 +1,28 @@
+{%- set pageTitle = title + ' - ' + site.name -%}
+
+{%- if page.url === "/" -%}
+{%- set pageTitle = site.name -%}
+{%- endif -%}
+
+{%- set siteTitle = site.name -%}
+{%- set siteDescription = site.description -%}
+{%- set currentUrl = site.url + page.url -%}
+{%- set socialImage = site.url + site.socialImage -%}
+
+    <title>{{ pageTitle }}</title>
+    <link rel="canonical" href="{{ currentUrl }}" />
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ currentUrl }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="{{ socialImage }}" />
+    <meta name="twitter:image" content="{{ socialImage }}" />
+    <meta property="og:image:alt" content="Decorative image for {{ site.name }}" />
+    <meta name="twitter:image:alt" content="Decorative image for {{ site.name }}" />
+    {%- if siteDescription -%}
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    {%- endif -%}
+    <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
