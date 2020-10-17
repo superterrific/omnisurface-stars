@@ -3,109 +3,109 @@
       {% block content %}
         <article>
           {% include "partials/page-header.html" %}
-          <div class="full-bleed">
-            <div class="wrapper-table">
-              <div class="table-responsive">
-                <table class="table-lg">
-                  <caption class="visually-hidden">Horses who have won on dirt, synthetic and turf surfaces.</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col" class="hdr-horse">Horse</th>
-                      <th scope="col" class="hdr-dirt"><span>Dirt</span> Type</th>
-                      <th scope="col" class="hdr-dirt"><span>Dirt</span> Race</th>
-                      <th scope="col" class="hdr-dirt"><span>Dirt</span> Track</th>
-                      <th scope="col" class="hdr-dirt"><span>Dirt</span> Date</th>
-                      <th scope="col" class="hdr-synth"><span>Synthetic</span> Type</th>
-                      <th scope="col" class="hdr-synth"><span>Synthetic</span> Race</th>
-                      <th scope="col" class="hdr-synth"><span>Synthetic</span> Track</th>
-                      <th scope="col" class="hdr-synth"><span>Synthetic</span> Date</th>
-                      <th scope="col" class="hdr-turf"><span>Turf</span> Type</th>
-                      <th scope="col"class="hdr-turf"><span>Turf</span> Race</th>
-                      <th scope="col" class="hdr-turf"><span>Turf</span> Track</th>
-                      <th scope="col" class="hdr-turf"><span>Turf</span> Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {% for item in wonThree %}
-                    <tr>
-                      <td><a href="{{ item.pedigreeLink }}">{{ item.horse }}</a></td>
-                      <td>{{ item.dirtType }}</td>
-                      <td>{{ item.dirtRace }}</td>
-                      <td>{{ item.dirtTrk }}</td>
-                      <td>{{ item.dirtDate }}</td>
-                      <td>{{ item.synthType }}</td>
-                      <td>{{ item.synthRace }}</td>
-                      <td>{{ item.synthTrk }}</td>
-                      <td>{{ item.synthDate }}</td>
-                      <td>{{ item.turfType }}</td>
-                      <td>{{ item.turfRace }}</td>
-                      <td>{{ item.turfTrk }}</td>
-                      <td>{{ item.turfDate }}</td>
-                    </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-              </div>
-              {% for item in wonThree %}
-              <table class="table-sm">
+        </article>
+        <div class="full-bleed">
+          <div class="wrapper-table">
+            <div class="table-responsive">
+              <table class="table-lg">
+                <caption class="visually-hidden">Horses who have won on dirt, synthetic and turf surfaces.</caption>
                 <thead>
                   <tr>
-                    <th scope="col" class="hdr-horse-sm" colspan="2"><a href="{{ item.pedigreeLink }}">{{ item.horse }}</a></th>
+                    <th scope="col" class="hdr-horse">Horse</th>
+                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Type</th>
+                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Race</th>
+                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Track</th>
+                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Date</th>
+                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Type</th>
+                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Race</th>
+                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Track</th>
+                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Date</th>
+                    <th scope="col" class="hdr-turf"><span>Turf</span> Type</th>
+                    <th scope="col"class="hdr-turf"><span>Turf</span> Race</th>
+                    <th scope="col" class="hdr-turf"><span>Turf</span> Track</th>
+                    <th scope="col" class="hdr-turf"><span>Turf</span> Date</th>
                   </tr>
-                  </thead>
-                  <tbody>
+                </thead>
+                <tbody>
+                  {% for item in wonThree %}
                   <tr>
-                    <td class="hdr-dirt">Dirt Type</td>
+                    <td><a href="{{ item.pedigreeLink }}">{{ item.horse }}</a></td>
                     <td>{{ item.dirtType }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-dirt">Dirt Race</td>
                     <td>{{ item.dirtRace }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-dirt">Dirt Track</td>
                     <td>{{ item.dirtTrk }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-dirt">Dirt Date</td>
                     <td>{{ item.dirtDate }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-synth">Synthetic Type</td>
                     <td>{{ item.synthType }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-synth">Synthetic Race</td>
                     <td>{{ item.synthRace }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-synth">Synthetic Track</td>
                     <td>{{ item.synthTrk }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-synth">Synthetic Date</td>
                     <td>{{ item.synthDate }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-turf">Turf Type</td>
                     <td>{{ item.turfType }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-turf">Turf Race</td>
                     <td>{{ item.turfRace }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-turf">Turf Track</td>
                     <td>{{ item.turfTrk }}</td>
-                  </tr>
-                  <tr>
-                    <td class="hdr-turf">Turf Date</td>
                     <td>{{ item.turfDate }}</td>
                   </tr>
+                  {% endfor %}
                 </tbody>
               </table>
-              {% endfor %}
             </div>
+            {% for item in wonThree %}
+            <table class="table-sm">
+              <thead>
+                <tr>
+                  <th scope="col" class="hdr-horse-sm" colspan="2"><a href="{{ item.pedigreeLink }}">{{ item.horse }}</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="hdr-dirt">Dirt Type</td>
+                  <td>{{ item.dirtType }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-dirt">Dirt Race</td>
+                  <td>{{ item.dirtRace }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-dirt">Dirt Track</td>
+                  <td>{{ item.dirtTrk }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-dirt">Dirt Date</td>
+                  <td>{{ item.dirtDate }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-synth">Synthetic Type</td>
+                  <td>{{ item.synthType }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-synth">Synthetic Race</td>
+                  <td>{{ item.synthRace }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-synth">Synthetic Track</td>
+                  <td>{{ item.synthTrk }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-synth">Synthetic Date</td>
+                  <td>{{ item.synthDate }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-turf">Turf Type</td>
+                  <td>{{ item.turfType }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-turf">Turf Race</td>
+                  <td>{{ item.turfRace }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-turf">Turf Track</td>
+                  <td>{{ item.turfTrk }}</td>
+                </tr>
+                <tr>
+                  <td class="hdr-turf">Turf Date</td>
+                  <td>{{ item.turfDate }}</td>
+                </tr>
+              </tbody>
+            </table>
+            {% endfor %}
           </div>
-        </article>
+        </div>
       {% endblock %}
