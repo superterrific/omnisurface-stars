@@ -6,24 +6,24 @@
         </article>
         <div class="full-bleed">
           <div class="wrapper-table">
-            <div class="table-responsive">
+            <div class="table-responsive" role="region" aria-labelledby="caption-lg" tabindex="0">
               <table class="table-lg">
-                <caption class="visually-hidden">Horses who have won on dirt, synthetic and turf surfaces.</caption>
+                <caption id="caption-lg" class="visually-hidden">Horses who have won on dirt, synthetic and turf surfaces.</caption>
                 <thead>
                   <tr>
-                    <th scope="col" class="hdr-horse">Horse</th>
-                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Type</th>
-                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Race</th>
-                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Track</th>
-                    <th scope="col" class="hdr-dirt"><span>Dirt</span> Date</th>
-                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Type</th>
-                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Race</th>
-                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Track</th>
-                    <th scope="col" class="hdr-synth"><span>Synthetic</span> Date</th>
-                    <th scope="col" class="hdr-turf"><span>Turf</span> Type</th>
-                    <th scope="col"class="hdr-turf"><span>Turf</span> Race</th>
-                    <th scope="col" class="hdr-turf"><span>Turf</span> Track</th>
-                    <th scope="col" class="hdr-turf"><span>Turf</span> Date</th>
+                    <th class="hdr-horse">Horse</th>
+                    <th class="hdr-dirt"><span>Dirt</span> Type</th>
+                    <th class="hdr-dirt"><span>Dirt</span> Race</th>
+                    <th class="hdr-dirt"><span>Dirt</span> Track</th>
+                    <th class="hdr-dirt"><span>Dirt</span> Date</th>
+                    <th class="hdr-synth"><span>Synthetic</span> Type</th>
+                    <th class="hdr-synth"><span>Synthetic</span> Race</th>
+                    <th class="hdr-synth"><span>Synthetic</span> Track</th>
+                    <th class="hdr-synth"><span>Synthetic</span> Date</th>
+                    <th class="hdr-turf"><span>Turf</span> Type</th>
+                    <th class="hdr-turf"><span>Turf</span> Race</th>
+                    <th class="hdr-turf"><span>Turf</span> Track</th>
+                    <th class="hdr-turf"><span>Turf</span> Date</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -49,9 +49,10 @@
             </div>
             {% for item in wonThree %}
             <table class="table-sm">
+              <caption class="visually-hidden">Horses who have won on dirt, synthetic and turf surfaces.</caption>
               <thead>
                 <tr>
-                  <th scope="col" class="hdr-horse-sm" colspan="2"><a href="{{ item.pedigreeLink }}">{{ item.horse }}</a></th>
+                  <th class="hdr-horse-sm" colspan="2"><a href="{{ item.pedigreeLink }}">{{ item.horse }}</a></th>
                 </tr>
                 </thead>
                 <tbody>
