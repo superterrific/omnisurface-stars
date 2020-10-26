@@ -11,6 +11,7 @@ th {
   background: var(--color-turf-dark);
   color: var(--color-lightest);
   text-align: left;
+  vertical-align: bottom;
   padding: .6rem;
   box-shadow: var(--shadow);
   position: -webkit-sticky;
@@ -95,6 +96,7 @@ th span {
 }
 
 @media screen and (max-width: 800px) {
+  .table-responsive,
   .table-lg {
     display: none;
   }
@@ -105,9 +107,5 @@ th span {
 
   tr td:first-child {
     width: 10rem;
-  }
-
-  .table-responsive {
-    height: unset;
   }
 }
