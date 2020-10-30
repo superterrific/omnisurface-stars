@@ -19,11 +19,11 @@
         </div>
         <nav aria-label="Primary">
           <ul>
-            <li><a href="/" {% if page.url === '/' %} aria-current="true"{% endif %}>Home</a></li>
-            <li><a href="/won-all-three/" {% if '/won-all-three/' in page.url %}aria-current="true"{% endif %} aria-label="Won on all three surfaces">Won on All Three</a></li>
-            <li><a href="/won-two/" {% if '/won-two/' in page.url %}aria-current="true"{% endif %} aria-label="Won on two of three surfaces">Won on Two</a></li>
-            <li><a href="/pedigree/" {% if '/pedigree/' in page.url %}aria-current="true"{% endif %}>Pedigree</a></li>
-            <li><a href="/about/" {% if '/about/' in page.url %}aria-current="true"{% endif %}>About</a></li>
+            <li><a href="/" {{ 'aria-current=true' if '/' === page.url }}>Home</a></li>
+            <li><a href="/won-all-three/" {{ 'aria-current=true' if '/won-all-three/' in page.url }} aria-label="Won on all three surfaces">Won on All Three</a></li>
+            <li><a href="/won-two/" {{ 'aria-current=true' if '/won-two/' in page.url }} aria-label="Won on two of three surfaces">Won on Two</a></li>
+            <li><a href="/pedigree/" {{ 'aria-current=true' if '/pedigree/' in page.url }}>Pedigree</a></li>
+            <li><a href="/about/" {{ 'aria-current=true' if '/about/' in page.url }}>About</a></li>
           </ul>
         </nav>
       </div>
