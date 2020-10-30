@@ -209,8 +209,8 @@ figcaption {
 
 hr {
     border: 0;
-    border-bottom: 1px solid #999;
-    background: #666;
+    border-bottom: 1px solid var(--color-synthetic-dark);
+    background: var(--color-synthetic-darker);
 }
 
 /* A11y -------------------------------------------------------- */
