@@ -20,6 +20,12 @@ module.exports = config => {
     return `<figcaption>${content}</figure>`
   });
 
+  // Open the browser on launch
+  config.setBrowserSyncConfig({
+    open: true,
+    ghostMode: false
+  });
+
     return {
       markdownTemplateEngine: 'njk',
       dataTemplateEngine: 'njk',
