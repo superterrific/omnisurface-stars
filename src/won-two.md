@@ -6,4 +6,4 @@ The following is an incomplete list of horses who have won on two of three surfa
 
 View the full pedigree for each horse at [Pedigree Query](http://pedigreequery.com/) by clicking the name of the horse.
 
-[View as Google Sheet](https://docs.google.com/spreadsheets/d/1xtVLSHuqIE4Me7las6TJJ1XS0LOwq4JkYgW1Gno9qz0/edit?usp=sharing) or [download a CSV file](/files/oss-won-two.csv).
+[View as Google Sheet](https://docs.google.com/spreadsheets/d/13pcPvyxIaOionFa0XPaKNc0PEwn6Sd5N96KWM3eF4YE/edit#gid=0) or [download a CSV file](/files/oss-won-two.csv).

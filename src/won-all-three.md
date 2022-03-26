@@ -6,4 +6,4 @@ The following is an incomplete list of horses who have won on dirt, synthetic an
 
 View the full pedigree for each horse at [Pedigree Query](http://pedigreequery.com/) by clicking the name of the horse.
 
-[View as Google Sheet](https://docs.google.com/spreadsheets/d/1frzQ3U8udDL33i2odizC9i8G81ZBSo0LxdQF1QPULNM/edit?usp=sharing) or [download a CSV file](/files/oss-won-all-three.csv).
+[View as Google Sheet](https://docs.google.com/spreadsheets/d/1zVysFJrgtYHTyBG70p9jm9khmU8YLHkagUFMsz7ihjk/edit#gid=0) or [download a CSV file](/files/oss-won-all-three.csv).
