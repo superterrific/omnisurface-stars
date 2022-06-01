@@ -10,7 +10,7 @@ This site is an archive of datasets that were a part of the Omnisurface Stars bl
   <picture>
     <source srcset="/img/oss-original.avif" type="image/avif">
     <source srcset="/img/oss-original.webp" type="image/webp">
-    <img src="/img/oss-original.jpg" alt="The original Omnisurface Stars blog" loading="lazy">
+    <img src="/img/oss-original.jpg" alt="The original Omnisurface Stars blog">
   </picture>
   {% figcaption %} <span aria-hidden="true">The original Omnisurface Stars blog in all its decade old bloggy glory.</span>{% endfigcaption %}
 {% endfigure %}
